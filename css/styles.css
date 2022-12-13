@@ -2,7 +2,7 @@
 
 :root {
     --background: #E5EAEF;
-    --background-nav:#262626;
+    --background-nav: #252525;
     --primary: #4387D8;
     --secondary: #315E93;
     --tertiary: #FBFCFE;
@@ -31,12 +31,13 @@ body {
 header {
     background-color: var(--background-nav);
     padding: 1rem;
-    height: 7rem;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
     width: 100%;
+    box-shadow: var(--text-light-gray) 0 0 10px 0;
 }
 
 .nav-container {
@@ -50,19 +51,33 @@ header {
 .nav-container-branding h1 a {
     text-decoration: none;
     color: var(--tertiary);
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 .nav-container-branding h2 {
     color: var(--primary);
     margin-top: 5px;
+    font-size: 1.2rem;
 }
 
 .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--background-nav);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 16px 0;
 }
 
 .nav-menu li {
@@ -76,12 +91,28 @@ header {
     font-size: 0.8rem;
 }
 
+.nav-menu a:hover {
+    color: var(--white);
+}
+
 .hamburguer {
-    display: none;
+    display: block;
     cursor: pointer;
     border: 2px solid gray;
     padding: 0 8px;
     border-radius: 5px;
+}
+
+.hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburguer.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
 }
 
 .bar {
@@ -93,42 +124,111 @@ header {
     transition: all 0.3s ease-in-out;
     background-color: var(--background);
 }
-@media (max-width:576px){
-    .nav-container-branding h1 a{
-        font-size: 1.4rem;
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10px 60px 10px;
+    background-color: var(--title);
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.profile-container-img {
+    max-width: 300px;
+    padding: 25px;
+}
+
+.profile-container-img img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    box-shadow: var(--text-light-gray) 0px 15px 15px -10px;
+}
+
+.profile-container h1 {
+    text-align: center;
+    color: var(--tertiary);
+    font-size: 1.2rem;
+}
+
+.profile-container span {
+    display: block;
+    color: var(--primary);
+}
+
+
+@media (min-width:576px) {
+    .nav-container-branding h1 a {
+        font-size: 1.6rem;
     }
-    .nav-container-branding h2{
-        font-size: 1.2rem;
+
+    .nav-container-branding h2 {
+        font-size: 1.3rem;
+    }
+
+    .profile-container h1 {
+        font-size: 1.85rem;
+    }
+
+    .profile-container {
+        max-width: 960px;
     }
 }
-@media(max-width:768px) {
-    .hamburguer{
+
+@media (min-width:768px) {
+    .profile-container {
+        flex-direction: row-reverse;
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    .nav-menu {
+        position: unset;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .title-container {
+        width: 400px;
+    }
+
+    .profile-container h1 {
+        text-align: left;
+        color: var(--tertiary);
+        font-size: 2.5rem;
+    }
+
+    .profile-container span {
         display: block;
+        color: var(--primary);
     }
-    .hamburguer.active .bar:nth-child(2){
-        opacity: 0;
+    .profile-container-img {
+        max-width: 400px;
+        padding: 0;
     }
-    .hamburguer.active .bar:nth-child(1){
-        transform: translateY(10px) rotate(45deg);
-    }
-    .hamburguer.active .bar:nth-child(3){
-        transform: translateY(-12px) rotate(-45deg);
-    }
-    .nav-menu{
-        position: fixed;
-        left: -100%;
-        top: 7rem;
-        gap: 0;
-        flex-direction: column;
-        background-color: var(--background-nav);
+    .profile-container-img img {
+        border-radius: 20%;
+        object-fit: contain;
         width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-    .nav-menu.active{
-        left: 0;
-    }
-    .nav-item{
-        margin: 16px 0;
+        -webkit-mask-image: linear-gradient(to left, var(--background), transparent);
+        mask-image: linear-gradient(to left, var(--background), transparent);
+        z-index: -1;
     }
 }
