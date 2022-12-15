@@ -2,12 +2,14 @@
 
 :root {
     --background: #E5EAEF;
-    --background-nav: #252525;
-    --primary: #4387D8;
+    --background-nav: #20232a;
+    /* --primary: #4387D8; */
+    --primary: #61dafb; 
     --secondary: #315E93;
     --tertiary: #FBFCFE;
     --white: #FFFFFF;
-    --title: #102032;
+    --background-body: #102032;
+    /* --title: #282c34; */
     --text: #FFFFFF;
     --text-light-gray: #aaa;
 }
@@ -51,13 +53,13 @@ header {
 .nav-container-branding h1 a {
     text-decoration: none;
     color: var(--tertiary);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .nav-container-branding h2 {
     color: var(--primary);
     margin-top: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .nav-menu {
@@ -65,6 +67,7 @@ header {
     left: -100%;
     top: 70px;
     gap: 0;
+    display: flex;
     flex-direction: column;
     background-color: var(--background-nav);
     width: 100%;
@@ -131,7 +134,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 100px 10px 60px 10px;
-    background-color: var(--title);
+    background-color: var(--background-body);
 }
 
 .profile-container {
@@ -159,7 +162,7 @@ header {
 .profile-container h1 {
     text-align: center;
     color: var(--tertiary);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .profile-container span {
@@ -167,6 +170,19 @@ header {
     color: var(--primary);
 }
 
+@media (min-width:360px) {
+    .nav-container-branding h1 a {
+        font-size: 1.4rem;
+    }
+
+    .nav-container-branding h2 {
+        font-size: 1.2rem;
+    }
+
+    .profile-container h1 {
+        font-size: 1.3rem;
+    }
+}
 
 @media (min-width:576px) {
     .nav-container-branding h1 a {
@@ -209,6 +225,10 @@ header {
         width: 400px;
     }
 
+    #profile {
+        padding: 100px 10px 25px 10px;
+    }
+
     .profile-container h1 {
         text-align: left;
         color: var(--tertiary);
@@ -219,10 +239,12 @@ header {
         display: block;
         color: var(--primary);
     }
+
     .profile-container-img {
         max-width: 400px;
         padding: 0;
     }
+
     .profile-container-img img {
         border-radius: 20%;
         object-fit: contain;
