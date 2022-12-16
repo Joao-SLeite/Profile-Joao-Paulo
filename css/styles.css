@@ -30,6 +30,7 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+
 header {
     background-color: var(--background-nav);
     padding: 1rem;
@@ -169,6 +170,77 @@ header {
     display: block;
     color: var(--primary);
 }
+#profession-qualification{
+    padding: 20px 5px;
+    width: 100%;
+}
+
+.profession-qualification-container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.profession-qualification-container-title{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+.container-cards{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.profession-qualification-card{
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: #aaa 0 10px 10px 5px;
+    margin-bottom: 15px;
+
+}
+.profession-qualification-brand{
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profession-qualification-brand img{
+    max-width: 250px;
+}
+.profession-qualification-description{
+    padding: 5px 10px 20px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.profession-qualification-description h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.profession-qualification-description h3 span{
+    color: var(--secondary);
+    font-weight: bolder;
+}
+.profession-qualification-description div{
+    font-size: 0.8rem;
+    
+}
+
+
+
+
 
 @media (min-width:360px) {
     .nav-container-branding h1 a {
