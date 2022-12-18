@@ -1,0 +1,12 @@
+.FMtitle,
+.profile-container-img,
+.professional-experience-container-title,
+.profession-qualification-container-title,
+.profession-qualification-card,
+.professional-experience-card{
+    visibility: hidden;
+}
+.profession-qualification-container-title,
+.profession-qualification-card{
+    z-index: -1;
+}
