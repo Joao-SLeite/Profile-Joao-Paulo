@@ -3,13 +3,11 @@
 :root {
     --background: #E5EAEF;
     --background-nav: #20232a;
-    /* --primary: #4387D8; */
     --primary: #61dafb; 
     --secondary: #315E93;
     --tertiary: #FBFCFE;
     --white: #FFFFFF;
     --background-body: #102032;
-    /* --title: #282c34; */
     --text: #FFFFFF;
     --text-light-gray: #aaa;
 }
@@ -170,24 +168,33 @@ header {
     display: block;
     color: var(--primary);
 }
-#profession-qualification{
+#profession-qualification, 
+#professional-experience{
     padding: 20px 5px;
     width: 100%;
 }
+#professional-experience{
+    background-color: #4387D8;
+}
 
-.profession-qualification-container{
+.profession-qualification-container, 
+.professional-experience-container{
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
-.profession-qualification-container-title{
+.profession-qualification-container-title,
+.professional-experience-container-title{
     font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
     margin-bottom: 15px;
+}
+.professional-experience-container-title{
+    color: var(--tertiary);
 }
 .container-cards{
     width: 100%;
@@ -196,7 +203,8 @@ header {
     justify-content: center;
     flex-wrap: wrap;
 }
-.profession-qualification-card{
+.profession-qualification-card,
+.professional-experience-card{
     width: 100%;
     max-width: 450px;
     margin: 0 auto;
@@ -208,6 +216,10 @@ header {
     margin: 0 5px 15px;
 
 }
+.professional-experience-card{
+    max-width: 960px;
+}
+
 .profession-qualification-brand{
     padding: 20px;
     display: flex;
@@ -250,7 +262,45 @@ header {
     font-size: 0.8rem;
     
 }
+.professional-experience-card{
+    position: relative;
+    justify-content: space-between;
+    box-shadow: 0px 36px 28px -14px rgba(0, 0, 0, 0.2);
+    padding: 0 10px;
+    height: 250px;
+    overflow: hidden;
+}
+.professional-experience-description{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.professional-experience-card img{
+    position: absolute;
+    opacity: 0.4;
+    top: -10px;
+    right: -168px;
+    width: 250px;
 
+}
+#irt{
+    width: 65px;
+    top: 3px;
+    right: 8px;
+}
+.professional-experience-description h3{
+    font-size: 14px;
+}
+.professional-experience-description-text{
+    font-size: 12px;
+    color: var(--background-body);
+    text-align: justify;
+}
+.professional-experience-description-text span{
+    color: var(--secondary);
+    font-weight: 900;
+}
 @media (min-width:360px) {
     .nav-container-branding h1 a {
         font-size: 1.4rem;
@@ -263,6 +313,12 @@ header {
     .profile-container h1 {
         font-size: 1.3rem;
     }
+    .professional-experience-description h3{
+        font-size: 17px;
+    }
+    .professional-experience-description-text{
+        font-size: 14px;
+    }
 }
 
 @media (min-width:576px) {
@@ -274,7 +330,8 @@ header {
         font-size: 1.3rem;
     }
 
-    .profile-container h1, .profession-qualification-container-title {
+    .profile-container h1, 
+    .profession-qualification-container-title {
         font-size: 1.85rem;
     }
 
@@ -294,6 +351,12 @@ header {
         justify-content: space-between;
         margin-top: 10px;
         margin-right: 10px;
+    }
+    .professional-experience-description h3{
+        font-size: 24px;
+    }
+    .professional-experience-description-text{
+        font-size: 16px;
     }
 }
 
@@ -348,6 +411,19 @@ header {
         mask-image: linear-gradient(to left, var(--background), transparent);
         z-index: -1;
     }
+    .profession-qualification-container-title,
+    .professional-experience-container-title{
+        font-size: 24px;
+    }
+    .professional-experience-description{
+        padding: 20px;
+    }
+    .professional-experience-description h3{
+        font-size: 24px;
+    }
+    .professional-experience-description-text{
+        font-size: 18px;
+    }
 }
 @media (min-width:992px){
     .profession-qualification-card{
@@ -364,5 +440,11 @@ header {
     }
     .profession-qualification-brand img{
         max-width: 250px;
+    }
+    .professional-experience-description h3{
+        font-size: 26px;
+    }
+    .professional-experience-description-text{
+        font-size: 20px;
     }
 }
