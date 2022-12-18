@@ -186,39 +186,43 @@ header {
     font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 700;
-    text-align: left;
+    text-align: center;
     margin-bottom: 15px;
-    padding-left: 30px;
 }
 .container-cards{
     width: 100%;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .profession-qualification-card{
     width: 100%;
     max-width: 450px;
     margin: 0 auto;
-    background-color: var(--white);
+    background-color: var(--tertiary);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     box-shadow: #aaa 0 10px 10px 5px;
-    margin-bottom: 15px;
+    margin: 0 5px 15px;
 
 }
 .profession-qualification-brand{
-    padding: 20px 60px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 150px;
 }
 .profession-qualification-brand img{
     max-width: 250px;
 }
+#logo-abfm{
+    width: 160px;
+}
 .profession-qualification-description{
-    padding: 5px 10px 20px;
+    padding: 5px 5px 10px;
     height: 130px;
     display: flex;
     flex-direction: column;
@@ -226,21 +230,26 @@ header {
     justify-content: space-between;
 }
 .profession-qualification-description h3{
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: 700;
+    text-align: center;
 }
 .profession-qualification-description h3 span{
     color: var(--secondary);
     font-weight: bolder;
 }
+.profession-qualification-description h4{
+    text-align: center;
+    margin-top: 5px;
+    color: var(--text-light-gray);
+}
+.hsl-abfm{
+    display: block;
+}
 .profession-qualification-description div{
     font-size: 0.8rem;
     
 }
-
-
-
-
 
 @media (min-width:360px) {
     .nav-container-branding h1 a {
@@ -265,12 +274,26 @@ header {
         font-size: 1.3rem;
     }
 
-    .profile-container h1 {
+    .profile-container h1, .profession-qualification-container-title {
         font-size: 1.85rem;
     }
 
     .profile-container {
         max-width: 960px;
+    }
+    .profession-qualification-card{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 700px;
+        padding: 10px;
+    }
+    .profession-qualification-brand img{
+        max-width: 200px;
+    }
+    .profession-qualification-description{
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -324,5 +347,22 @@ header {
         -webkit-mask-image: linear-gradient(to left, var(--background), transparent);
         mask-image: linear-gradient(to left, var(--background), transparent);
         z-index: -1;
+    }
+}
+@media (min-width:992px){
+    .profession-qualification-card{
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        background-color: var(--tertiary);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: #aaa 0 10px 10px 5px;
+        margin: 0 5px 15px;
+    
+    }
+    .profession-qualification-brand img{
+        max-width: 250px;
     }
 }
