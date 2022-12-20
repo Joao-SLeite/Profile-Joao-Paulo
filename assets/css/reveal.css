@@ -3,10 +3,16 @@
 .professional-experience-container-title,
 .profession-qualification-container-title,
 .profession-qualification-card,
-.professional-experience-card{
+.professional-experience-card,
+.skills-container-title img,
+.skills-container-title h3,
+.skills-list-item{
     visibility: hidden;
 }
 .profession-qualification-container-title,
 .profession-qualification-card{
     z-index: -1;
+}
+header{
+    z-index: 9999;
 }

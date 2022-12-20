@@ -302,6 +302,70 @@ header {
     color: var(--secondary);
     font-weight: 900;
 }
+#Skills{
+    width: 100%;
+    padding: 20px 5px;
+    background-color: var(--background-body);
+    color: var(--text);
+}
+.skills-container{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills-container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.skills-container-title img{
+    width: 80px;
+    animation: rotationImage 6s infinite linear;
+}
+.skills-container-title img:hover{
+    animation: rotationImage 2s infinite linear
+}
+.skills-container-title h3 span{
+    display: block;
+    font-size: 24px;
+    color: var(--primary);
+
+}
+.skills-container-card{
+    width: 100%;
+    padding: 10px;
+
+}
+.skills-list li{
+    list-style: none;
+    margin-left: 15px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.skills-list li::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 3px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/radiation.svg);
+}
+.skills-list-item p{
+    text-align: justify;
+    font-size: 14px;
+}
+.skills-list-item p span{
+    color: var(--primary);
+    font-weight: 700;
+}
 @media (min-width:360px) {
     .nav-container-branding h1 a {
         font-size: 1.4rem;
@@ -331,11 +395,13 @@ header {
         font-size: 1.3rem;
     }
 
-    .profile-container h1, 
-    .profession-qualification-container-title {
+    .profile-container h1 {
         font-size: 1.85rem;
     }
-
+    .profession-qualification-container-title,
+    .professional-experience-container-title{
+        font-size: 22px;
+    }
     .profile-container {
         max-width: 960px;
     }
@@ -357,6 +423,18 @@ header {
         font-size: 24px;
     }
     .professional-experience-description-text{
+        font-size: 16px;
+    }
+    .skills-container-title h3{
+        font-size: 20px;
+    }
+    .skills-container-title h3 span{
+        font-size: 34px;
+    }
+    .skills-container-card{
+        padding: 20px;
+    }
+    .skills-list-item p{
         font-size: 16px;
     }
 }
@@ -425,6 +503,22 @@ header {
     .professional-experience-description-text{
         font-size: 18px;
     }
+    .skills-container-title img{
+        width: 100px;
+        margin-right: 20px;
+    }
+    .skills-container-title h3{
+        font-size: 24px;
+    }
+    .skills-container-title h3 span{
+        font-size: 42px;
+    }
+    .skills-container-card{
+        padding: 20px 30px;
+    }
+    .skills-list-item p{
+        font-size: 18px;
+    }
 }
 @media (min-width:992px){
     .profession-qualification-card{
@@ -448,4 +542,32 @@ header {
     .professional-experience-description-text{
         font-size: 20px;
     }
+    .skills-list-item p{
+        font-size: 20px;
+    }
+    .skills-container-title img{
+        width: 120px;
+        margin-right: 20px;
+    }
+    .skills-container-title h3{
+        font-size: 30px;
+    }
+    .skills-container-title h3 span{
+        font-size: 50px;
+    }
+    .skills-container-card{
+        padding: 20px 30px;
+    }
+    .skills-list-item p{
+        font-size: 18px;
+    }
+}
+@keyframes rotationImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
 }

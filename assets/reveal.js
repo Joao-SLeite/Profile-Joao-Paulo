@@ -31,3 +31,23 @@ ScrollReveal().reveal(".professional-experience-card", {
     origin: 'bottom',
     distance: '200px'
 });
+
+ScrollReveal().reveal(".skills-container-title img", {
+    delay: 200,
+    duration: 1500,
+    origin: 'Left',
+    distance: '200px'
+})
+ScrollReveal().reveal(".skills-container-title h3", {
+    delay: 200,
+    duration: 1500,
+    origin: 'Left',
+    distance: '200px'
+})
+ScrollReveal().reveal(".skills-list-item", {
+    delay: 200,
+    duration: 1200,
+    origin: 'bottom',
+    distance: '200px'
+});
+
