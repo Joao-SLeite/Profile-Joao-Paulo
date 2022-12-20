@@ -144,6 +144,7 @@ header {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 .profile-container-img {
@@ -169,16 +170,20 @@ header {
     color: var(--primary);
 }
 #profession-qualification, 
-#professional-experience{
+#professional-experience,
+#Contact{
     padding: 20px 5px;
     width: 100%;
 }
 #professional-experience{
     background-color: #4387D8;
 }
-
+#Contact{
+    background-color: #283142;
+}
 .profession-qualification-container, 
-.professional-experience-container{
+.professional-experience-container,
+.footer-container{
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
@@ -202,6 +207,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .profession-qualification-card,
 .professional-experience-card{
@@ -214,7 +220,6 @@ header {
     border-radius: 10px;
     box-shadow: #aaa 0 10px 10px 5px;
     margin: 0 5px 15px;
-
 }
 .professional-experience-card{
     max-width: 960px;
@@ -323,6 +328,8 @@ header {
     align-items: center;
     margin-bottom: 20px;
     gap: 10px;
+    overflow: hidden;
+    width: 100%;
 }
 .skills-container-title img{
     width: 80px;
@@ -365,6 +372,104 @@ header {
 .skills-list-item p span{
     color: var(--primary);
     font-weight: 700;
+}
+
+.footer-container{
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--text);
+    position: relative;
+}
+.footer-container-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer-container-title h3{
+    font-size: 24px;
+    color: var(--primary);
+    font-weight: 700;
+}
+.footer-container-title p{
+    font-size: 15px;
+    font-weight: 700;
+}
+#footer-form{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-input{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.input-item-group{
+    margin-bottom: 15px;
+    width: 100%;
+}
+.input-item-group label{
+    margin: 5px;
+    color: var(--text-light-gray);
+    font-size: 12px;
+}
+.input-item{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1B2531;
+    border: 1px solid #384459;
+    color: var(--text);
+}
+.input-item:hover{
+    filter: brightness(1.2);
+}
+.btn-container{
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.btn-forms{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--background-nav);
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn-forms:hover{
+    filter: brightness(1.2);
+}
+.btn-whats{
+    position: absolute;
+    right: 10px;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.btn-whats:hover{
+    filter: brightness(1.2);
+}
+.btn-whats img{
+    width: 100%;
+    z-index: 1;
 }
 @media (min-width:360px) {
     .nav-container-branding h1 a {

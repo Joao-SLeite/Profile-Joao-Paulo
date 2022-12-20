@@ -22,20 +22,19 @@ ScrollReveal().reveal(".profile-container-img", {
 ScrollReveal().reveal(".profession-qualification-card", {
     delay: 200,
     duration: 1200,
-    origin: 'left',
+    origin: 'Right',
     distance: '200px'
 });
 ScrollReveal().reveal(".professional-experience-card", {
     delay: 200,
     duration: 1200,
-    origin: 'bottom',
+    origin: 'left',
     distance: '200px'
 });
 
 ScrollReveal().reveal(".skills-container-title img", {
     delay: 200,
     duration: 1500,
-    origin: 'Left',
     distance: '200px'
 })
 ScrollReveal().reveal(".skills-container-title h3", {
