@@ -462,7 +462,13 @@ header {
     resize: none;
     font-size: 14px;
 }
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #1b2531 inset;
+}
 
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--text-light-gray);
+}
 .input-item:hover {
     filter: brightness(1.2);
 }
