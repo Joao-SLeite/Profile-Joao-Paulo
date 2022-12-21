@@ -6,7 +6,9 @@
 .professional-experience-card,
 .skills-container-title img,
 .skills-container-title h3,
-.skills-list-item{
+.skills-list-item,
+.footer-container-title,
+#footer-form{
     visibility: hidden;
 }
 .profession-qualification-container-title,

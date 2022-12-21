@@ -3,7 +3,7 @@
 :root {
     --background: #E5EAEF;
     --background-nav: #20232a;
-    --primary: #61dafb; 
+    --primary: #61dafb;
     --secondary: #315E93;
     --tertiary: #FBFCFE;
     --white: #FFFFFF;
@@ -134,6 +134,7 @@ header {
     align-items: center;
     padding: 100px 10px 60px 10px;
     background-color: var(--background-body);
+    overflow: hidden;
 }
 
 .profile-container {
@@ -144,7 +145,6 @@ header {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    overflow: hidden;
 }
 
 .profile-container-img {
@@ -169,48 +169,51 @@ header {
     display: block;
     color: var(--primary);
 }
-#profession-qualification, 
-#professional-experience,
-#Contact{
+
+#profession-qualification,
+#professional-experience{
     padding: 20px 5px;
     width: 100%;
+    overflow: hidden;
 }
-#professional-experience{
+
+#professional-experience {
     background-color: #4387D8;
 }
-#Contact{
-    background-color: #283142;
-}
-.profession-qualification-container, 
-.professional-experience-container,
-.footer-container{
+
+.profession-qualification-container,
+.professional-experience-container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
+
 .profession-qualification-container-title,
-.professional-experience-container-title{
+.professional-experience-container-title {
     font-size: 1.1rem;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
     margin-bottom: 15px;
 }
-.professional-experience-container-title{
+
+.professional-experience-container-title {
     color: var(--tertiary);
 }
-.container-cards{
+
+.container-cards {
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    overflow: hidden;
+
 }
+
 .profession-qualification-card,
-.professional-experience-card{
+.professional-experience-card {
     width: 100%;
     max-width: 450px;
     margin: 0 auto;
@@ -221,24 +224,28 @@ header {
     box-shadow: #aaa 0 10px 10px 5px;
     margin: 0 5px 15px;
 }
-.professional-experience-card{
+
+.professional-experience-card {
     max-width: 960px;
 }
 
-.profession-qualification-brand{
+.profession-qualification-brand {
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 150px;
 }
-.profession-qualification-brand img{
+
+.profession-qualification-brand img {
     max-width: 250px;
 }
-#logo-abfm{
+
+#logo-abfm {
     width: 160px;
 }
-.profession-qualification-description{
+
+.profession-qualification-description {
     padding: 5px 5px 10px;
     height: 130px;
     display: flex;
@@ -246,28 +253,34 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-.profession-qualification-description h3{
+
+.profession-qualification-description h3 {
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
 }
-.profession-qualification-description h3 span{
+
+.profession-qualification-description h3 span {
     color: var(--secondary);
     font-weight: bolder;
 }
-.profession-qualification-description h4{
+
+.profession-qualification-description h4 {
     text-align: center;
     margin-top: 5px;
     color: var(--text-light-gray);
 }
-.hsl-abfm{
+
+.hsl-abfm {
     display: block;
 }
-.profession-qualification-description div{
+
+.profession-qualification-description div {
     font-size: 0.8rem;
-    
+
 }
-.professional-experience-card{
+
+.professional-experience-card {
     position: relative;
     justify-content: space-between;
     box-shadow: 0px 36px 28px -14px rgba(0, 0, 0, 0.2);
@@ -275,13 +288,15 @@ header {
     height: 250px;
     overflow: hidden;
 }
-.professional-experience-description{
+
+.professional-experience-description {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.professional-experience-card img{
+
+.professional-experience-card img {
     position: absolute;
     opacity: 0.4;
     top: -10px;
@@ -290,30 +305,35 @@ header {
 
 }
 
-#irt{
+#irt {
     width: 65px;
     top: 3px;
     right: 8px;
 }
-.professional-experience-description h3{
+
+.professional-experience-description h3 {
     font-size: 14px;
 }
-.professional-experience-description-text{
+
+.professional-experience-description-text {
     font-size: 12px;
     color: var(--background-body);
     text-align: justify;
 }
-.professional-experience-description-text span{
+
+.professional-experience-description-text span {
     color: var(--secondary);
     font-weight: 900;
 }
-#Skills{
+
+#Skills {
     width: 100%;
     padding: 20px 5px;
     background-color: var(--background-body);
     color: var(--text);
 }
-.skills-container{
+
+.skills-container {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
@@ -322,40 +342,48 @@ header {
     align-items: center;
     justify-content: center;
 }
-.skills-container-title{
+
+.skills-container-title {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
     gap: 10px;
+    padding: 10px;
     overflow: hidden;
     width: 100%;
 }
-.skills-container-title img{
+
+.skills-container-title img {
     width: 80px;
     animation: rotationImage 6s infinite linear;
 }
-.skills-container-title img:hover{
+
+.skills-container-title img:hover {
     animation: rotationImage 2s infinite linear
 }
-.skills-container-title h3 span{
+
+.skills-container-title h3 span {
     display: block;
     font-size: 24px;
     color: var(--primary);
 
 }
-.skills-container-card{
+
+.skills-container-card {
     width: 100%;
     padding: 10px;
 
 }
-.skills-list li{
+
+.skills-list li {
     list-style: none;
     margin-left: 15px;
     position: relative;
     margin-bottom: 15px;
 }
-.skills-list li::before{
+
+.skills-list li::before {
     content: '';
     position: absolute;
     left: -20px;
@@ -365,80 +393,89 @@ header {
     height: 15px;
     background-image: url(../img/radiation.svg);
 }
-.skills-list-item p{
+
+.skills-list-item p {
     text-align: justify;
     font-size: 14px;
 }
-.skills-list-item p span{
+
+.skills-list-item p span {
     color: var(--primary);
     font-weight: 700;
 }
 
-.footer-container{
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    color: var(--text);
-    position: relative;
+#Contact {
+    padding: 20px 5px;
+    width: 100%;
+    background-color: #283142;
 }
-.footer-container-title{
+
+.footer-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text);
+}
+
+.footer-container-title {
     text-align: center;
     margin-bottom: 20px;
 }
-.footer-container-title h3{
+
+.footer-container-title h3 {
     font-size: 24px;
     color: var(--primary);
     font-weight: 700;
 }
-.footer-container-title p{
+
+.footer-container-title p {
     font-size: 15px;
     font-weight: 700;
 }
-#footer-form{
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.container-input{
+
+#footer-form {
     width: 100%;
     max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+    position: relative;
 }
-.input-item-group{
+
+.input-item-group {
     margin-bottom: 15px;
-    width: 100%;
 }
-.input-item-group label{
+
+.input-item-group label {
     margin: 5px;
     color: var(--text-light-gray);
     font-size: 12px;
 }
-.input-item{
+
+.input-item {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    background-color: #1B2531;
+    background-color: #1b2531;
     border: 1px solid #384459;
-    color: var(--text);
+    color: var(--text-light-gray);
+    resize: none;
+    font-size: 14px;
 }
-.input-item:hover{
+
+.input-item:hover {
     filter: brightness(1.2);
 }
-.btn-container{
+
+.btn-container {
     width: 100%;
     max-width: 500px;
     display: flex;
     justify-content: space-around;
     gap: 20px;
 }
-.btn-forms{
+
+.btn-forms {
     width: 100%;
     height: 30px;
     display: flex;
@@ -451,10 +488,12 @@ header {
     font-size: 16px;
     font-weight: 700;
 }
-.btn-forms:hover{
+
+.btn-forms:hover {
     filter: brightness(1.2);
 }
-.btn-whats{
+
+.btn-whats {
     position: absolute;
     right: 10px;
     bottom: 40px;
@@ -463,14 +502,18 @@ header {
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+    animation: animaWhats 1s alternate infinite linear;
 }
-.btn-whats:hover{
+
+.btn-whats:hover {
     filter: brightness(1.2);
 }
-.btn-whats img{
+
+.btn-whats img {
     width: 100%;
     z-index: 1;
 }
+
 @media (min-width:360px) {
     .nav-container-branding h1 a {
         font-size: 1.4rem;
@@ -483,10 +526,12 @@ header {
     .profile-container h1 {
         font-size: 1.3rem;
     }
-    .professional-experience-description h3{
+
+    .professional-experience-description h3 {
         font-size: 17px;
     }
-    .professional-experience-description-text{
+
+    .professional-experience-description-text {
         font-size: 14px;
     }
 }
@@ -503,45 +548,74 @@ header {
     .profile-container h1 {
         font-size: 1.85rem;
     }
+
     .profession-qualification-container-title,
-    .professional-experience-container-title{
+    .professional-experience-container-title {
         font-size: 22px;
     }
+
     .profile-container {
         max-width: 960px;
     }
-    .profession-qualification-card{
+
+    .profession-qualification-card {
         flex-direction: row;
         justify-content: space-between;
         max-width: 700px;
         padding: 10px;
     }
-    .profession-qualification-brand img{
+
+    .profession-qualification-brand img {
         max-width: 200px;
     }
-    .profession-qualification-description{
+
+    .profession-qualification-description {
         justify-content: space-between;
         margin-top: 10px;
         margin-right: 10px;
     }
-    .professional-experience-description h3{
+
+    .professional-experience-description h3 {
         font-size: 24px;
     }
-    .professional-experience-description-text{
+
+    .professional-experience-description-text {
         font-size: 16px;
     }
-    .skills-container-title h3{
+
+    .skills-container-title h3 {
         font-size: 20px;
     }
-    .skills-container-title h3 span{
+
+    .skills-container-title h3 span {
         font-size: 34px;
     }
-    .skills-container-card{
+
+    .skills-container-card {
         padding: 20px;
     }
-    .skills-list-item p{
+
+    .skills-list-item p {
         font-size: 16px;
     }
+    .footer-container-title h3 {
+        font-size: 30px;
+    }
+    
+    .footer-container-title p {
+        font-size: 18px;
+    }
+    .input-item-group label{
+        font-size: 14px;
+    }
+    .input-item{
+        font-size: 16px;
+    }
+    .btn-forms {
+        height: 40px;
+        font-size: 18px;
+    }
+
 }
 
 @media (min-width:768px) {
@@ -595,38 +669,65 @@ header {
         mask-image: linear-gradient(to left, var(--background), transparent);
         z-index: -1;
     }
+
     .profession-qualification-container-title,
-    .professional-experience-container-title{
+    .professional-experience-container-title {
         font-size: 24px;
     }
-    .professional-experience-description{
+
+    .professional-experience-description {
         padding: 20px;
     }
-    .professional-experience-description h3{
+
+    .professional-experience-description h3 {
         font-size: 24px;
     }
-    .professional-experience-description-text{
+
+    .professional-experience-description-text {
         font-size: 18px;
     }
-    .skills-container-title img{
+
+    .skills-container-title img {
         width: 100px;
         margin-right: 20px;
     }
-    .skills-container-title h3{
+
+    .skills-container-title h3 {
         font-size: 24px;
     }
-    .skills-container-title h3 span{
+
+    .skills-container-title h3 span {
         font-size: 42px;
     }
-    .skills-container-card{
+
+    .skills-container-card {
         padding: 20px 30px;
     }
-    .skills-list-item p{
+
+    .skills-list-item p {
         font-size: 18px;
     }
+    .footer-container-title h3 {
+        font-size: 34px;
+    }
+    
+    .footer-container-title p {
+        font-size: 20px;
+    }
+    .input-item-group label{
+        font-size: 16px;
+    }
+    .input-item{
+        font-size: 18px;
+    }
+    .btn-forms {
+        height: 45px;
+        font-size: 20px;
+    }
 }
-@media (min-width:992px){
-    .profession-qualification-card{
+
+@media (min-width:992px) {
+    .profession-qualification-card {
         width: 100%;
         max-width: 450px;
         margin: 0 auto;
@@ -636,43 +737,65 @@ header {
         border-radius: 10px;
         box-shadow: #aaa 0 10px 10px 5px;
         margin: 0 5px 15px;
-    
+
     }
-    .profession-qualification-brand img{
+
+    .profession-qualification-brand img {
         max-width: 250px;
     }
-    .professional-experience-description h3{
+
+    .professional-experience-description h3 {
         font-size: 26px;
     }
-    .professional-experience-description-text{
+
+    .professional-experience-description-text {
         font-size: 20px;
     }
-    .skills-list-item p{
+
+    .skills-list-item p {
         font-size: 20px;
     }
-    .skills-container-title img{
+
+    .skills-container-title img {
         width: 120px;
         margin-right: 20px;
     }
-    .skills-container-title h3{
+
+    .skills-container-title h3 {
         font-size: 30px;
     }
-    .skills-container-title h3 span{
+
+    .skills-container-title h3 span {
         font-size: 50px;
     }
-    .skills-container-card{
+
+    .skills-container-card {
         padding: 20px 30px;
     }
-    .skills-list-item p{
+
+    .skills-list-item p {
         font-size: 18px;
     }
+    #footer-form {
+        max-width: 700px;
+    }
+    .btn-container{
+        max-width: 700px;
+    }
 }
+
 @keyframes rotationImage {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
-    
+
+}
+@keyframes animaWhats{
+    0%{translate: -5px;}
+    50%{translate: 0;}
+    100%{translate: 5px;}
 }

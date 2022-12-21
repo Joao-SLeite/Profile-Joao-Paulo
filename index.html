@@ -293,31 +293,37 @@
         </div>
 
         <form id="footer-form" action="#">
-          <div class="container-input">
-            <div class="input-item-group">
-              <label for="name">Informe seu Nome</label>
-              <input class="input-item" type="name" id="name" required="true" />
-            </div>
-            <div class="input-item-group">
-              <label for="email">Informe seu E-mail</label>
-              <input class="input-item" type="email" id="email" required="true" />
-            </div>
-            <div class="input-item-group">
-              <label for="textArea">Digite Aqui sua Mensagem</label>
-              <textarea class="input-item" name="textArea" id="textArea" rows="7" required="true"></textarea>
-            </div>
+          <div class="input-item-group">
+            <label for="name">Informe seu Nome</label>
+            <input class="input-item" type="name" id="name" required="true" />
           </div>
-          
+          <div class="input-item-group">
+            <label for="email">Informe seu E-mail</label>
+            <input class="input-item" type="email" id="email" required="true" />
+          </div>
+          <div class="input-item-group">
+            <label for="message">Digite Aqui sua Mensagem</label>
+            <textarea
+              class="input-item"
+              name="message"
+              id="message"
+              rows="7"
+              required="true"
+            ></textarea>
+          </div>
           <div class="btn-container">
-            <button id="btn-send" class="btn-forms" type="submit">Enviar</button>
-            <button id="btn-reset" class="btn-forms" type="reset">Limpar</button>
+            <button id="btn-send" class="btn-forms" type="submit">
+              Enviar
+            </button>
+            <button id="btn-reset" class="btn-forms" type="reset">
+              Limpar
+            </button>
+          </div>
+          <div class="btn-whats">
+            <img src="./assets/img/whatsapp-icon.svg" alt="" />
           </div>
         </form>
-        <div class="btn-whats">
-          <img src="./assets/img/whatsapp-icon.svg" alt="">
-        </div>
       </div>
-
     </footer>
     <script src="./assets/index.js"></script>
     <script src="./assets/reveal.js"></script>

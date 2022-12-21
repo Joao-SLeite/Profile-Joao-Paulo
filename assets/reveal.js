@@ -49,4 +49,14 @@ ScrollReveal().reveal(".skills-list-item", {
     origin: 'bottom',
     distance: '200px'
 });
-
+ScrollReveal().reveal(".footer-container-title", {
+    delay: 200,
+    duration: 1500,
+    origin: 'left',
+    distance: '200px'
+})
+ScrollReveal().reveal("#footer-form",
+ {  
+    delay: 200,
+    duration: 1500,
+});
