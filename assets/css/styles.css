@@ -171,7 +171,7 @@ header {
 }
 
 #profession-qualification,
-#professional-experience{
+#professional-experience {
     padding: 20px 5px;
     width: 100%;
     overflow: hidden;
@@ -254,6 +254,10 @@ header {
     justify-content: space-between;
 }
 
+.profession-qualification-description div {
+    font-size: 0.78rem;
+}
+
 .profession-qualification-description h3 {
     font-size: 1.2rem;
     font-weight: 700;
@@ -273,11 +277,6 @@ header {
 
 .hsl-abfm {
     display: block;
-}
-
-.profession-qualification-description div {
-    font-size: 0.8rem;
-
 }
 
 .professional-experience-card {
@@ -443,7 +442,8 @@ header {
 }
 
 .input-item-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .input-item-group label {
@@ -462,6 +462,7 @@ header {
     resize: none;
     font-size: 14px;
 }
+
 input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 30px #1b2531 inset;
 }
@@ -469,10 +470,21 @@ input:-webkit-autofill {
 input:-webkit-autofill {
     -webkit-text-fill-color: var(--text-light-gray);
 }
+
 .input-item:hover {
     filter: brightness(1.2);
 }
-
+.tooltipEmail{
+    font-size: 12px;
+    margin: 0 5px;
+    color: #ff0000;
+    font-weight: 700;
+    position: absolute;
+    display: none;
+}
+.tooltipEmail.active{
+    display: block;
+}
 .btn-container {
     width: 100%;
     max-width: 500px;
@@ -604,19 +616,23 @@ input:-webkit-autofill {
     .skills-list-item p {
         font-size: 16px;
     }
+
     .footer-container-title h3 {
         font-size: 30px;
     }
-    
+
     .footer-container-title p {
         font-size: 18px;
     }
-    .input-item-group label{
+
+    .input-item-group label {
         font-size: 14px;
     }
-    .input-item{
+
+    .input-item {
         font-size: 16px;
     }
+
     .btn-forms {
         height: 40px;
         font-size: 18px;
@@ -636,10 +652,7 @@ input:-webkit-autofill {
     .nav-menu {
         position: unset;
         width: auto;
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         gap: 20px;
     }
 
@@ -713,19 +726,23 @@ input:-webkit-autofill {
     .skills-list-item p {
         font-size: 18px;
     }
+
     .footer-container-title h3 {
         font-size: 34px;
     }
-    
+
     .footer-container-title p {
         font-size: 20px;
     }
-    .input-item-group label{
+
+    .input-item-group label {
         font-size: 16px;
     }
-    .input-item{
+
+    .input-item {
         font-size: 18px;
     }
+
     .btn-forms {
         height: 45px;
         font-size: 20px;
@@ -782,10 +799,12 @@ input:-webkit-autofill {
     .skills-list-item p {
         font-size: 18px;
     }
+
     #footer-form {
         max-width: 700px;
     }
-    .btn-container{
+
+    .btn-container {
         max-width: 700px;
     }
 }
@@ -800,8 +819,17 @@ input:-webkit-autofill {
     }
 
 }
-@keyframes animaWhats{
-    0%{translate: -5px;}
-    50%{translate: 0;}
-    100%{translate: 5px;}
+
+@keyframes animaWhats {
+    0% {
+        translate: -5px;
+    }
+
+    50% {
+        translate: 0;
+    }
+
+    100% {
+        translate: 5px;
+    }
 }
